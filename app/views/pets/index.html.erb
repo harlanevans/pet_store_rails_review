@@ -1,0 +1,13 @@
+<h1>Pet Store</h1>
+
+<%= link_to 'New Pet?', new_pet_path %>
+<br />
+
+<% @pets.each do |pet| %>
+
+  <%= link_to pet.name, pet_path(pet.id) %>
+  <h3>Age: <%= pet.age %></h3>
+  <h3>Type: <%= pet.type %></h3>
+  <h3>ID: <%= pet.id %></h3>
+
+<% end %>
