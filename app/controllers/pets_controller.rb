@@ -1,5 +1,5 @@
 class PetsController < ApplicationController
-before_action :set_pet, only: [:show, :edit, :update ] 
+before_action :set_pet, only: [:show, :edit, :update, :destroy ] 
 
   
   # All the pets or all of our model
@@ -48,6 +48,7 @@ before_action :set_pet, only: [:show, :edit, :update ]
   end
 
   def destroy
+    # BEFORE ACTION
   end
 
   private
